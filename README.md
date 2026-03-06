@@ -1,6 +1,6 @@
 # Tense Chart CLI
 
-The Daily Tense Charts, now in your terminal! Uses my new Tense Chart API.
+The Daily Tense Charts, now in your terminal! Uses my new [Tense Chart API](https://sea.navynui.cc/tensechart/api/).
 
 ## Features
 
