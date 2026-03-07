@@ -89,7 +89,7 @@ def generateCharts(subject_verb, tenses):
     # Subject-verb box
     boxLenght = len(subject_verb[0]) + len(subject_verb[1]) + 6
     print("╭" + "─" * boxLenght + "╮")
-    print("│  " + subject_verb[0] + "  " + subject_verb[1] + "  │")
+    print("│  \033[3;m" + subject_verb[0] + "  " + subject_verb[1] + "\033[0m  │")
     print("╰" + "─" * boxLenght + "╯")
 
     # Use the longest tense for padding
@@ -103,28 +103,28 @@ def generateCharts(subject_verb, tenses):
 
     # Active chart
     print("╭" + "─" * 20 + "┬" + "─" * pastLenght + "┬" + "─" * presentLenght + "┬" + "─" * futureLenght + "╮")
-    print("│ Active             │ Past " + " " * topPastlenght + " │ Present " + " " * topPresentlenght + " │ Future " + " " * topFuturelenght + " │")
+    print("│ \033[1;3mActive\033[0m             │ \033[1;mPast\033[0m " + " " * topPastlenght + " │ \033[1;mPresent\033[0m " + " " * topPresentlenght + " │ \033[1;mFuture\033[0m " + " " * topFuturelenght + " │")
     print("├" + "─" * 20 + "┼" + "─" * pastLenght + "┼" + "─" * presentLenght + "┼" + "─" * futureLenght + "┤")
-    print("│ Simple             │ " + tenses[0] + " " * (len(tenses[21]) - len(tenses[0])) + " │ " + tenses[1] + " " * (len(tenses[22]) - len(tenses[1])) + " │ " + tenses[2] + " " * (len(tenses[23]) - len(tenses[2])) + " │")
+    print("│ \033[1;mSimple\033[0m             │ " + tenses[0] + " " * (len(tenses[21]) - len(tenses[0])) + " │ " + tenses[1] + " " * (len(tenses[22]) - len(tenses[1])) + " │ " + tenses[2] + " " * (len(tenses[23]) - len(tenses[2])) + " │")
     print("├" + "─" * 20 + "┼" + "─" * pastLenght + "┼" + "─" * presentLenght + "┼" + "─" * futureLenght + "┤")
-    print("│ Perfect            │ " + tenses[3] + " " * (len(tenses[21]) - len(tenses[3])) + " │ " + tenses[4] + " " * (len(tenses[22]) - len(tenses[4])) + " │ " + tenses[5] + " " * (len(tenses[23]) - len(tenses[5])) + " │")
+    print("│ \033[1;mPerfect\033[0m            │ " + tenses[3] + " " * (len(tenses[21]) - len(tenses[3])) + " │ " + tenses[4] + " " * (len(tenses[22]) - len(tenses[4])) + " │ " + tenses[5] + " " * (len(tenses[23]) - len(tenses[5])) + " │")
     print("├" + "─" * 20 + "┼" + "─" * pastLenght + "┼" + "─" * presentLenght + "┼" + "─" * futureLenght + "┤")
-    print("│ Continuous         │ " + tenses[6] + " " * (len(tenses[21]) - len(tenses[6])) + " │ " + tenses[7] + " " * (len(tenses[22]) - len(tenses[7])) + " │ " + tenses[8] + " " * (len(tenses[23]) - len(tenses[8])) + " │")
+    print("│ \033[1;mContinuous\033[0m         │ " + tenses[6] + " " * (len(tenses[21]) - len(tenses[6])) + " │ " + tenses[7] + " " * (len(tenses[22]) - len(tenses[7])) + " │ " + tenses[8] + " " * (len(tenses[23]) - len(tenses[8])) + " │")
     print("├" + "─" * 20 + "┼" + "─" * pastLenght + "┼" + "─" * presentLenght + "┼" + "─" * futureLenght + "┤")
-    print("│ Perfect Continuous │ " + tenses[9] + " " * (len(tenses[21]) - len(tenses[9])) + " │ " + tenses[10] + " " * (len(tenses[22]) - len(tenses[10])) + " │ " + tenses[11] + " " * (len(tenses[23]) - len(tenses[11])) + " │")
+    print("│ \033[1;mPerfect Continuous\033[0m │ " + tenses[9] + " " * (len(tenses[21]) - len(tenses[9])) + " │ " + tenses[10] + " " * (len(tenses[22]) - len(tenses[10])) + " │ " + tenses[11] + " " * (len(tenses[23]) - len(tenses[11])) + " │")
     print("╰" + "─" * 20 + "┴" + "─" * pastLenght + "┴" + "─" * presentLenght + "┴" + "─" * futureLenght + "╯")
 
     # Passive chart
     print("╭" + "─" * 20 + "┬" + "─" * pastLenght + "┬" + "─" * presentLenght + "┬" + "─" * futureLenght + "╮")
-    print("│ Passive            │ Past " + " " * topPastlenght + " │ Present " + " " * topPresentlenght + " │ Future " + " " * topFuturelenght + " │")
+    print("│ \033[1;3mPasive\033[0m             │ Past " + " " * topPastlenght + " │ Present " + " " * topPresentlenght + " │ Future " + " " * topFuturelenght + " │")
     print("├" + "─" * 20 + "┼" + "─" * pastLenght + "┼" + "─" * presentLenght + "┼" + "─" * futureLenght + "┤")
-    print("│ Simple             │ " + tenses[12] + " " * (len(tenses[21]) - len(tenses[12])) + " │ " + tenses[13] + " " * (len(tenses[22]) - len(tenses[13])) + " │ " + tenses[14] + " " * (len(tenses[23]) - len(tenses[14])) + " │")
+    print("│ \033[1;mSimple\033[0m             │ " + tenses[12] + " " * (len(tenses[21]) - len(tenses[12])) + " │ " + tenses[13] + " " * (len(tenses[22]) - len(tenses[13])) + " │ " + tenses[14] + " " * (len(tenses[23]) - len(tenses[14])) + " │")
     print("├" + "─" * 20 + "┼" + "─" * pastLenght + "┼" + "─" * presentLenght + "┼" + "─" * futureLenght + "┤")
-    print("│ Perfect            │ " + tenses[15] + " " * (len(tenses[21]) - len(tenses[15])) + " │ " + tenses[16] + " " * (len(tenses[22]) - len(tenses[16])) + " │ " + tenses[17] + " " * (len(tenses[23]) - len(tenses[17])) + " │")
+    print("│ \033[1;mPerfect\033[0m            │ " + tenses[15] + " " * (len(tenses[21]) - len(tenses[15])) + " │ " + tenses[16] + " " * (len(tenses[22]) - len(tenses[16])) + " │ " + tenses[17] + " " * (len(tenses[23]) - len(tenses[17])) + " │")
     print("├" + "─" * 20 + "┼" + "─" * pastLenght + "┼" + "─" * presentLenght + "┼" + "─" * futureLenght + "┤")
-    print("│ Continuous         │ " + tenses[18] + " " * (len(tenses[21]) - len(tenses[18])) + " │ " + tenses[19] + " " * (len(tenses[22]) - len(tenses[19])) + " │ " + tenses[20] + " " * (len(tenses[23]) - len(tenses[20])) + " │")
+    print("│ \033[1;mContinuous\033[0m         │ " + tenses[18] + " " * (len(tenses[21]) - len(tenses[18])) + " │ " + tenses[19] + " " * (len(tenses[22]) - len(tenses[19])) + " │ " + tenses[20] + " " * (len(tenses[23]) - len(tenses[20])) + " │")
     print("├" + "─" * 20 + "┼" + "─" * pastLenght + "┼" + "─" * presentLenght + "┼" + "─" * futureLenght + "┤")
-    print("│ Perfect Continuous │ " + tenses[21] + " │ " + tenses[22] + " │ " + tenses[23] + " │")
+    print("│ \033[1;mPerfect Continuous\033[0m │ " + tenses[21] + " │ " + tenses[22] + " │ " + tenses[23] + " │")
     print("╰" + "─" * 20 + "┴" + "─" * pastLenght + "┴" + "─" * presentLenght + "┴" + "─" * futureLenght + "╯")
 
 
