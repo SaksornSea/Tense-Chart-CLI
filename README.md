@@ -48,10 +48,15 @@ The Daily Tense Charts, now in your terminal! Uses my new [Tense Chart API](http
 ```
     python cli.py --subject "I" --verb "run"
 ```
+4. Open the settings menu:
+```
+    python cli.py --settings
+```
 If you need any help, or forgot these commands, use the --help flag:
 ```
     python cli.py --help
 ```
+
 ## Quick note
 
-This tool uses colors, special unicodes, and some formating for a better visual experience. If you are using a terminal that does not support these, too bad.. I will be making a way to turn these off in the future.
+This tool uses colors, special unicodes, and some formating for a better visual experience. If you are using a terminal that does not support these, use the settings menu to turn them off.
