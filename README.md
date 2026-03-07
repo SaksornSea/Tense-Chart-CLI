@@ -1,6 +1,13 @@
 # Tense Chart CLI
-
 The Daily Tense Charts, now in your terminal! Uses my new [Tense Chart API](https://sea.navynui.cc/tensechart/api/).
+
+<img src="assets/logo.png" width="700" alt="Tense Chart CLI Logo"/>
+
+## Example images
+
+<img src="assets/full.png" width="600" alt="Example interface"/>
+
+*(`python cli.py --subject T.David --verb Teach`)*  
 
 ## Features
 
