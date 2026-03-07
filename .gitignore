@@ -7,3 +7,4 @@ venv/
 .vscode/
 .idea/
 *.swp
+settings.json

@@ -3,17 +3,24 @@ The Daily Tense Charts, now in your terminal! Uses my new [Tense Chart API](http
 
 <img src="assets/logo.png" width="700" alt="Tense Chart CLI Logo"/>
 
-## Example images
-
-<img src="assets/full.png" width="600" alt="Example interface"/>
-
-*(`python cli.py --subject T.David --verb Teach`)*  
 
 ## Features
 
 - **Daily Tense Chart**: Just like the web version, but in your terminal!
 - **Custom Tense Chart**: Also like the web version
 - **Random Tense Chart**: Run the command to get a new tense chart, run it again, a whole new one! NOT avalaible in the web version.
+
+
+## Example images
+
+<img src="assets/chart.png" width="600" alt="Example interface"/>
+
+*(`python cli.py --subject T.David --verb Teach`)*
+
+<img src="assets/settings.png" width="600" alt="Example interface"/>
+
+*(`python cli.py --settings`)*
+
 
 ## Installation
 
